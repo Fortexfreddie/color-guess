@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #092147;
+    min-width: 340px;
+}
+.container1 .containerBGC{
+    width: 100vw;
+    height: 100vh;
+}
+.container1 .colorGameTitle{
+    background-color: #092147;
+    text-align: center;
+    padding: 2rem 0;
+}
+.container1 .colorGameTitle h2{
+    font-family: 'fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+}
+.container1 .colorGameTitle h3{
+    font-family: 'fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+}
+.container1 .innerCon{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+}
+.container1 .containerBGC .colorGame{
+    background-color: #ffffff;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.container1 .colorGame .colorGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+.container1 .colorGame .colorBox{
+    background-color: green;
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 5px 5px 15px rgb(65, 62, 65);
+    border-radius: 20px;
+    animation: fadeOut 2s ease-in-out infinite alternate;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; } 
+    100% { opacity: 1; }
+}
+.container1 .colorGame .colorOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container1 .colorGame .colorOption{
+    width: 80%;
+    height: fit-content;
+    padding: 5px;
+    background-color: yellowgreen;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    margin: 10px;
+    box-shadow: 5px 5px 15px rgb(65, 62, 65);
+    border-radius: 20px;
+}
+.container1 .colorGame .colorOption:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.container1 .colorGame .colorOption h2{
+    font-family: 'fredoka', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #092147;
+    padding: 10px;
+}
+.container1 .colorGame .colorGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 20px;
+}
+.container1 .colorGame .colorGrid2 h2{
+    font-family: 'fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #092147;
+}
+.container1 .colorGame .colorGrid2 h2 span{
+    font-weight: 500;
+    color: green;
+    font-weight: bold;
+}
+.wrong {
+    animation: wrong 0.5s ease-in-out;
+}
+@keyframes wrong {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+}
+.correct {
+    animation: wrong 0.5s ease-in-out;
+}
+.container1 .colorGame .colorGrid2 .newGameButton{
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(135deg, #092147, #1E3A8A);
+    justify-self: center;
+    box-shadow: 5px 5px 15px rgb(65, 62, 65);
+    align-content: center;
+    border-radius: 20px;
+}
+.container1 .colorGame .colorGrid2 .newGameButton h2{
+    font-family: 'fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+}
+.container1 .colorGame .colorGrid2 .newGameButton:hover{
+    cursor: pointer;
+}
+.container1 .colorGame .colorGrid2 .newGameButton:hover {
+    background: linear-gradient(135deg, #1E3A8A, #092147);
+    box-shadow: 5px 5px 20px rgba(65, 62, 65, 0.9);
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 376px) {
+    .container1 .colorGameTitle{
+        padding: 2rem 0;
+    }
+    .container1 .colorGameTitle h2{
+        font-size: 20px;
+    }
+    .container1 .colorGameTitle h3{
+        font-size: 12px;
+    }
+    .container1 .containerBGC .colorGame{
+        width: 80%;
+        height: fit-content;
+    }
+    .container1 .colorGame .colorGrid{
+        display: block;
+    }
+    .container1 .colorGame .colorBox{
+        width: 90%;
+        height: 9rem;
+    }
+    .container1 .colorGame .colorOptions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10px;
+    }
+    .container1 .colorGame .colorGrid2{
+        display: block;
+    }
+    .container1 .colorGame .colorGrid2 h2{
+        font-size: 17px;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton{
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton h2{
+        font-family: 'fredoka', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton:hover{
+        cursor: pointer;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton:hover {
+        background: linear-gradient(135deg, #1E3A8A, #092147);
+        box-shadow: 5px 5px 20px rgba(65, 62, 65, 0.9);
+        transform: scale(1.05);
+    }
+}
+
+
+
+
+@media (min-width: 377px) and (max-width: 576px) {
+    .container1 .colorGameTitle{
+        padding: 2.5rem 0;
+    }
+    .container1 .colorGameTitle h2{
+        font-size: 25px;
+    }
+    .container1 .colorGameTitle h3{
+        font-size: 15px;
+    }
+    .container1 .containerBGC .colorGame{
+        width: 80%;
+        height: fit-content;
+    }
+    .container1 .colorGame .colorGrid{
+        display: block;
+    }
+    .container1 .colorGame .colorBox{
+        width: 90%;
+        height: 12rem;
+    }
+    .container1 .colorGame .colorOptions{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10px;
+    }
+    .container1 .colorGame .colorGrid2{
+        display: block;
+    }
+    .container1 .colorGame .colorGrid2 h2{
+        font-size: 17px;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton{
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton h2{
+        font-family: 'fredoka', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton:hover{
+        cursor: pointer;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton:hover {
+        background: linear-gradient(135deg, #1E3A8A, #092147);
+        box-shadow: 5px 5px 20px rgba(65, 62, 65, 0.9);
+        transform: scale(1.05);
+    }
+}
+
+
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .container1 .colorGame .colorGrid{
+        display: block;
+    }
+    .container1 .colorGame .colorBox{
+        width: 90%;
+        height: 15rem;
+        margin: 20px 0;
+    }
+    .container1 .colorGame .colorOptions{
+        padding: 0 10px;
+    }
+    .container1 .colorGame .colorGrid2 .newGameButton{
+        width: 50%;
+    }
+}
+
+
+

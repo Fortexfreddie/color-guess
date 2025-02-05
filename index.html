@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Fredoka:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <div class="containerBGC">
+            <div data-testid="gameInstructions" class="colorGameTitle">
+                <h2>GUESS THE CORRECT COLOR</h2>
+                <h3>Click on the box that matches the color in the big box</h3>
+            </div>
+            <div class="innerCon">
+                <div class="colorGame">
+                    <div class="colorGrid">
+                        <div data-testid="colorBox" class="colorBox"></div>
+                        <div class="colorOptions">
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                            <div data-testid="colorOption" class="colorOption">
+                                <h2>click me 🤪</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorGrid2">
+                        <div>
+                            <div data-testid="gameStatus" class="gameStatus">
+                                <h2>Your color guess is <span></span></h2>
+                            </div>
+                            <div data-testid="score" class="gameScore">
+                                <h2>Your score = <span>0</span></h2>
+                            </div>
+                        </div>
+                        <div data-testid="newGameButton" class="newGameButton">
+                            <h2>RESET</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
